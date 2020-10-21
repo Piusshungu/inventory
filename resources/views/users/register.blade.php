@@ -12,7 +12,7 @@
 
 <style>
     body{
-    background-color: #dee9ff;
+    background-color: #ECF0F1;
 }
 
 .registration-form{
@@ -20,8 +20,8 @@
 }
 
 .registration-form form{
-    background-color: #fff;
-    max-width: 600px;
+    background-color: white;
+    max-width: 450px;
     margin: auto;
     padding: 50px 70px;
     border-top-left-radius: 30px;
@@ -31,7 +31,7 @@
 
 .registration-form .form-icon{
 	text-align: center;
-    background-color: #5891ff;
+    background-color: #0B5345;
     border-radius: 50%;
     font-size: 40px;
     color: white;
@@ -51,9 +51,9 @@
 .registration-form .create-account{
     border-radius: 30px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    background-color: #5791ff;
+    background-color: #0B5345;
     border: none;
     color: white;
     margin-top: 20px;
@@ -61,7 +61,7 @@
 
 .registration-form .social-media{
     max-width: 600px;
-    background-color: #fff;
+    background-color: red;
     margin: auto;
     padding: 35px 0;
     text-align: center;
@@ -104,7 +104,7 @@
     .registration-form .form-icon{
         width: 70px;
         height: 70px;
-        font-size: 30px;
+        font-size: 10px;
         line-height: 70px;
     }
 }
@@ -116,32 +116,26 @@
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="username" placeholder="Username">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control item" id="password" placeholder="Password">
+                <input type="text" class="form-control item" id="fullname" placeholder="Full Name">
             </div>
             <div class="form-group">
                 <input type="text" class="form-control item" id="email" placeholder="Email">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+                <input type="password" class="form-control item" id="password" placeholder="Password">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
+                <input type="password" class="form-control item" id="password" placeholder="Confirm Password">
+            </div>
+           
+            <div class="form-group">
+                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-block create-account">Create Account</button>
             </div>
         </form>
-        <div class="social-media">
-            <h5>Sign up with social media</h5>
-            <div class="social-icons">
-                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
-                <a href="#"><i class="icon-social-google" title="Google"></i></a>
-                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
-            </div>
-        </div>
+        
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>

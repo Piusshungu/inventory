@@ -12,7 +12,7 @@
 <style>
     .login-dark {
   height:1000px;
-  background:white url(../../assets/img/star-sky.jpg);
+  background:#ECF0F1 url(../../assets/img/star-sky.jpg);
   background-size:cover;
   position:center;
 }
@@ -20,7 +20,7 @@
 .login-dark form {
   max-width:320px;
   width:80%;
-  background-color:#0B5345;
+  background-color:white;
   padding:40px;
   border-radius:4px;
   transform:translate(-50%, -50%);
@@ -35,7 +35,7 @@
   text-align:center;
   padding:15px 0 20px;
   font-size:70px;
-  color:#2980ef;
+  color: #0B5345;
 }
 
 .login-dark form .form-control {
@@ -45,11 +45,11 @@
   border-radius:0;
   box-shadow:none;
   outline:none;
-  color:inherit;
+  color: #0B5345;
 }
 
 .login-dark form .btn-primary {
-  background:#1B4f72;
+  background: #0B5345;
   border:none;
   border-radius:4px;
   padding:11px;
@@ -60,7 +60,7 @@
 }
 
 .login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
-  background:#214a80;
+  background: #0B5345;
   outline:none;
 }
 
@@ -68,7 +68,7 @@
   display:block;
   text-align:center;
   font-size:12px;
-  color:#6f7a85;
+  color: #0B5345;
   opacity:0.9;
   text-decoration:none;
 }
