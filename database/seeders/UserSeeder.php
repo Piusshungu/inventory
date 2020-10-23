@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
             'email' => Str::random(10).'gmail.com',
             'phone_number' => Str::random('10'),
             'password' => Hash::make('password'),
-            'password_confirm' => Hash::make('password_confirm'),
+            'password_comfirm' => Hash::make('password_confirm'),
 
         ]);
     }

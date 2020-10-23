@@ -20,4 +20,14 @@ class UserController extends Controller
         return view('users/register');
 
     }
+
+    public function CreateUser(){
+        $this->validate(request(), [
+            'full_name' => 'required',
+            'email' => 'required|email',
+            'phone_number' => 'required',
+            'password' => 'required',
+            'password_confirm' => 'required'
+        ]);
+    }
 }
