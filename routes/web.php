@@ -19,3 +19,4 @@ use App\Http\Controllers\UserController;
 // });
 Route::get('/login', [UserController::class, 'Index']);
 Route::get('/register', [UserController::class, 'UserRegistration']);
+Route::post('/dashboard', [UserController::class, 'CreateUser']);

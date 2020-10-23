@@ -111,12 +111,13 @@
 </style>
 <body>
     <div class="registration-form">
-        <form>
+        <form method = "POST">
+        {{ csrf_field() }}
             <div class="form-icon">
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="fullname" placeholder="Full Name">
+                <input type="text" class="form-control item" id="full_name" placeholder="Full Name">
             </div>
             <div class="form-group">
                 <input type="text" class="form-control item" id="email" placeholder="Email">
@@ -125,17 +126,17 @@
                 <input type="password" class="form-control item" id="password" placeholder="Password">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control item" id="password" placeholder="Confirm Password">
+                <input type="password" class="form-control item" id="comfirm_password" placeholder="Confirm Password">
             </div>
            
             <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+                <input type="text" class="form-control item" id="phone_number" placeholder="Phone Number">
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-block create-account">Create Account</button>
+                <button href="{{ route('/dashboard') }}" type="button" class="btn btn-block create-account">Create Account</button>
               
             </div>
-            <a href="#" class="forgot">Do you have an account? Login</a>
+            <a href="{{ url('login') }}" class="forgot">Do you have an account? Login</a>
         </form>
         
     </div>
