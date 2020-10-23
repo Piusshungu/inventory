@@ -27,7 +27,10 @@ class UserController extends Controller
             'email' => 'required|email',
             'phone_number' => 'required',
             'password' => 'required',
-            'password_confirm' => 'required'
+            'password_comfirm' => 'required'
         ]);
+        $user = User::create(request(['full_name', 'email', 'phone_number', 'password', 'password_comfirm']));
+        auth()->login($user);
+        return redirect()->to('/dashboard');
     }
 }
