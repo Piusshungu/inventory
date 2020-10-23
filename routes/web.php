@@ -18,4 +18,4 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 Route::get('/login', [UserController::class, 'Index']);
-Route::get('register', [UserController::class, 'UserRegistration']);
+Route::get('/register', [UserController::class, 'UserRegistration']);
